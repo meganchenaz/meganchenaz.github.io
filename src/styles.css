@@ -3,9 +3,7 @@ body {
 }
 
 section {
-    height: 500px;
-    background-color: white;
-    border: solid black 1px;
+    background-color: #9392c7;
 }
 
 .hero {
@@ -16,8 +14,10 @@ section {
 }
 
 footer {
-    height: 500px;
-    background-color: black;
+    background-color: #16142A;
+    color: white;
+    text-align: center;
+    padding: 80px;
 }
 
 nav {
@@ -45,9 +45,21 @@ h1 {
     color: #81D8D0;
 }
 
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    color: #16142A;
+}
+
+
 p {
     margin: 0;
     font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -77,12 +89,10 @@ p {
 
 .button:hover {
     background-color: #81D8D0;
-    color: #16142A
 }
 
 .button:active {
-    background-color: #A9A9A9;
-    color: #808080;
+    background-color: #81D8D0;
 }
 
 .socials {
@@ -96,4 +106,106 @@ p {
 
 .social {
     margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 400px;
+    background-color: #adacc3;
+    box-shadow: 5px 5px 20px grey;
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    background-color: #9392c7;
+    color: #16142A;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #1d1a3f;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #1d1a3f;
+        /* align-items: flex-start; */
+    }
+
+    .logo {
+        display: none;
+    }
 }

@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&family=Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e30fc53888.js" crossorigin="anonymous"></script>
         <title>meganchenaz</title>
         <meta charset="UTF-8" />
     </head>
@@ -12,17 +13,20 @@
         <section class="hero">
             <nav>
                 <img class="logo" src="src/images/logo.png" alt="Megan Chen's logo"/>
-                <ul>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                <ul id="nav-list">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Megan Chen</h1>
                     <p>Computer Science Junior @Harvey Mudd College</p>
-                    <div class="button">About Me</div>
+                    <div class="button"><a href="#about-me">About Me</a></div>
                 </div>
                 <div class="socials">
                     <div><a href="https://www.linkedin.com/in/meganchenaz" class="social">
@@ -40,10 +44,49 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <footer></footer>
-
+        <section class="sub-section" id="about-me">
+            <div class="information">
+                <h2>About Me</h2>
+                <p>Hello! My name is Megan Chen, and I am a rising junior at Harvey Mudd College. I'm currently pursuing a Bachelors of Science in Computer Science.</p>
+                <h3>I am detail-oriented, inquisitive, and always looking for opportunities to learn! Through my classes and personal projects, I've grown familiar with pair programming, test driven development, and various programming languages. I am now seeking internship opportunities that will allow me to strengthen my programming skills and enhance my knowledge of software development.</h3>
+            </div>
+            <div class="headshot-container">
+                <video class="headshot" autoplay loop muted>
+                    <source src="src/videos/headshot.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        <section class="sub-section-alternative" id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img class="project-image" src="src/images/logo.png" alt="New Project Image"/>
+                    <h3>Coming Soon!!</h3>
+                    <p class="subtext">[INSERT TEXT ABOUT PROJECT]</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https:github.com/meganchenaz">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="src/images/shark_and_human_tracking.png" alt="Shark and Human Tracking Project Image"/>
+                    <h3>Shark and Human Tracking</h3>
+                    <p class="subtext">[INSERT TEXT ABOUT PROJECT]</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https:github.com/meganchenaz">View here</a></p>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="src/images/crossy_road_2.0.png" alt="Crossy Road Project Image"/>
+                    <h3>Crossy Road 2.0</h3>
+                    <p class="subtext">[INSERT TEXT ABOUT PROJECT]</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https:github.com/meganchenaz">View here</a></p>
+                </div>
+            </div>
+        </section>
+        <footer id="contact-me">
+            <h1>Contact Me</h1>
+            <p>Email: meganchenaz@gmail.com</p>
+        </footer>
         <script src="src/app.js"></script>
     </body>
 </html>
