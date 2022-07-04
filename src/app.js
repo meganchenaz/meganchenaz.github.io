@@ -11,6 +11,7 @@ const cloudFive = document.getElementById('cloud-five')
 const cloudSix = document.getElementById('cloud-six')
 const cloudSeven = document.getElementById('cloud-seven')
 const cloudEight = document.getElementById('cloud-eight')
+const cloudNine= document.getElementById('cloud-nine')
 
 function toggleButton() {
     navList.classList.toggle('show')
@@ -44,11 +45,14 @@ function move() {
     cloudSix.style.bottom = 20 + incrementer * 0.05 + '%'
     cloudSix.style.left = 65 + incrementer * 0.06 + '%'
 
-    cloudSeven.style.bottom = 45 + incrementer * 0.05 + '%'
-    cloudSeven.style.left = 70 + incrementer * 0.06 + '%'
+    cloudSeven.style.bottom = 85 + incrementer * 0.05 + '%'
+    cloudSeven.style.left = 65 + incrementer * 0.06 + '%'
 
-    cloudEight.style.bottom = 27 + incrementer * 0.05 + '%'
-    cloudEight.style.left = 90 + incrementer * 0.06 + '%'
+    cloudEight.style.bottom = 45 + incrementer * 0.05 + '%'
+    cloudEight.style.left = 70 + incrementer * 0.06 + '%'
+
+    cloudNine.style.bottom = 27 + incrementer * 0.05 + '%'
+    cloudNine.style.left = 90 + incrementer * 0.06 + '%'
 }
 
 hamburgerButton.addEventListener('click', toggleButton)
