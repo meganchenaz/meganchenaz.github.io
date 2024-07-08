@@ -58,6 +58,4 @@ function move() {
     cloudNine.style.left = 90 + incrementer * 0.06 + '%'
 }
 
-hamburgerButton.addEventListener('click', toggleButton)
-
 window.addEventListener('scroll', move)
