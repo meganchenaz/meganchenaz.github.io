@@ -13,8 +13,11 @@ const cloudSeven = document.getElementById('cloud-seven')
 const cloudEight = document.getElementById('cloud-eight')
 const cloudNine= document.getElementById('cloud-nine')
 
-function toggleButton() {
-    navList.classList.toggle('show')
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
 }
 
 function move() {
