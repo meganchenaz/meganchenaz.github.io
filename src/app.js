@@ -1,6 +1,14 @@
-const hamburgerButton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
+/* --------------------------------------------------------------- */
+/*  Function to toggle hamburger menu
+/* --------------------------------------------------------------- */
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
 
+// Object references
 const birds = document.getElementById('birds')
 const sun = document.getElementById('sun')
 const cloudOne = document.getElementById('cloud-one')
@@ -13,13 +21,9 @@ const cloudSeven = document.getElementById('cloud-seven')
 const cloudEight = document.getElementById('cloud-eight')
 const cloudNine= document.getElementById('cloud-nine')
 
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
+/* --------------------------------------------------------------- */
+/*  Function to adjust homepage scenery, as the user scrolls down
+/* --------------------------------------------------------------- */
 function move() {
     const incrementer = window.scrollY
     
